@@ -1,0 +1,70 @@
+:root {
+    --primaryColor: #3720ff;
+    --primaryColorLight: rgba(73, 53, 255, 0.05);
+    --greyDark: #141414;
+    --greyMiddle: #494949;
+    --greyLight: #c4c4c4;
+    --greyUltraLight: #fafafa;
+}
+
+.bg-light{
+    background-color: var(--greyUltraLight) !important;
+}
+
+.nav a{
+    color: var(--greyDark) !important;
+}
+
+.nav a.active{
+    color: var(--primaryColor) !important;
+}
+
+.nav a:hover{
+    color: var(--primaryColor) !important;
+}
+
+*{
+    font-family: Jost !important;
+}
+
+.btn-primary{
+    background-color: var(--primaryColor) !important;
+}
+
+textarea:focus, input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+input:focus{
+    border-color: var(--primaryColor) !important;
+}
+
+.alert-primary{
+    background-color: var(--primaryColorLight) !important;
+    border-color: var(--primaryColor) !important;
+    color: var(--primaryColor) !important;
+}
+
+.task{
+    padding: 8px 16px;
+    border-radius: 12px;
+    background-color: var(--greyUltraLight);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.task span{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 4px;
+    height: 100%;
+}
+
+.task p{
+    margin: 0 !important;
+    color: var(--greyMiddle);
+    opacity: 0.75;
+}
